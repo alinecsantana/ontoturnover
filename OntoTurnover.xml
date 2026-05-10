@@ -1,0 +1,2205 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover/"
+     xml:base="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Active_Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Active_Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Juridical_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Adolescent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Adolescent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Living_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Living_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Affect_More_Positive_Towards_The_New_Job -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Affect_More_Positive_Towards_The_New_Job">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Affiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Affiliation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Alignment_Between_Recognition_Received -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Alignment_Between_Recognition_Received">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Autoeficacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Autoeficacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Autonomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Autonomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Bad_Job_Change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Bad_Job_Change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Being_Assigned_To_Non-preferred_Roles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Being_Assigned_To_Non-preferred_Roles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Bad_Job_Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Benefits_Dissatisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Benefits_Dissatisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Better_Benefits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Better_Benefits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Better_Salaries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Better_Salaries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Burnout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Burnout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Canceled_Shifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Canceled_Shifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Career_Growth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Career_Growth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Benefits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Career_Plateaus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Career_Plateaus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_Of_Voluntary_Turnover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_Of_Voluntary_Turnover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_Of_Voluntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Industry">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_Of_Voluntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_Of_Voluntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_Of_Voluntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_Of_Voluntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Living_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Closing_Shifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Closing_Shifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Co-worker_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Co-worker_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Coaching_Program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Coaching_Program">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Learning_Opportunities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Confident_Leaders_In_Their_Roles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Confident_Leaders_In_Their_Roles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consecutive_Shifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consecutive_Shifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Continuous_Assessment_Of_Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Continuous_Assessment_Of_Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Corporate_Social_Responsibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Corporate_Social_Responsibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Of_Products_And_Services_Offered -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Of_Products_And_Services_Offered">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Reduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Reduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Consequences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Counseling_Program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Counseling_Program">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Learning_Opportunities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Fatigue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Fatigue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Damage_To_Employability_Potential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Damage_To_Employability_Potential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Damage_To_Professional_Self-Esteem_And_Identity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Damage_To_Professional_Self-Esteem_And_Identity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Deceased_Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Deceased_Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Natural_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Decline_In_Organizational_Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Decline_In_Organizational_Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Delays_In_Project_And_Delivery_Deadlines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Delays_In_Project_And_Delivery_Deadlines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Depersonalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Depersonalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Desire_To_Have_More_Free_Time_For_Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Desire_To_Have_More_Free_Time_For_Family">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Difficult_Relationship_With_The_Leader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Difficult_Relationship_With_The_Leader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Dismiss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Dismiss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Involuntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Dissatisfaction_With_Work-family_Balance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Dissatisfaction_With_Work-family_Balance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Distributed_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Distributed_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Drop_In_Team_Morale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Drop_In_Team_Morale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Drop_In_Team_Productivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Drop_In_Team_Productivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Drop_In_The_Quality_Of_Customer_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Drop_In_The_Quality_Of_Customer_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Economic_Insecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Economic_Insecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Economic_Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Economic_Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Elderly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Elderly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Living_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Emotional_Exhaustion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Emotional_Exhaustion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Emotional_Intelligence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Emotional_Intelligence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Social_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employee_Well-being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employee_Well-being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Social_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Entrepreneurial_Tendencies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Entrepreneurial_Tendencies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Ethical_Climate_Of_Collaboration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Ethical_Climate_Of_Collaboration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Ethical_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Ethical_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Evidence-based_Education_To_The_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Evidence-based_Education_To_The_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Training_And_Development_Programs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Excess_Of_Extra_Hours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Excess_Of_Extra_Hours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Fatigue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Exposure_To_Bullying -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Exposure_To_Bullying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Extinct_Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Extinct_Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Juridical_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Extra_Workload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Extra_Workload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Fatigue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Fear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Fear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Financial_Instability_And_Insecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Financial_Instability_And_Insecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Flexibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Flexibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Benefits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Fulfullment_Of_Psychological_Contract -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Fulfullment_Of_Psychological_Contract">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Give_Importance_To_The_Employee_Complaints_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Give_Importance_To_The_Employee_Complaints_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Benefits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Benefits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Recruitment_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Recruitment_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Relationship_With_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Relationship_With_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Salary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Good_Salary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Gossip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Gossip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Employee_Satisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Employee_Satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Consequences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Job-Person_Fit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Job-Person_Fit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Job_Satisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Job_Satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Person-Organization_Fit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Person-Organization_Fit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Sense_Of_Affiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Sense_Of_Affiliation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Growth_Ambition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Growth_Ambition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Growth_Opportunities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Growth_Opportunities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Health_and_Safety_Conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Health_and_Safety_Conditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Healthy_Professional_Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Healthy_Professional_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Benefits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Brande_Name_Companies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Brande_Name_Companies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Degree_Of_Perceived_Service_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Degree_Of_Perceived_Service_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Levels_Of_Organizational_Turnover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Levels_Of_Organizational_Turnover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Occupational_Commitment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Occupational_Commitment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Perceived_External_Employability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Perceived_External_Employability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Perceived_Internal_Employability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#High_Perceived_Internal_Employability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Hindrance_Stressors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Hindrance_Stressors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Hiring_Costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Hiring_Costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Human_Resources_Orientation_In_the_Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Human_Resources_Orientation_In_the_Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Idiosyncratic_Deals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Idiosyncratic_Deals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increase_In_Employee_Commitment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increase_In_Employee_Commitment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Consequences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increase_In_Organizational_Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increase_In_Organizational_Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Consequences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increased_Organizational_Engagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increased_Organizational_Engagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increased_Workload_Of_Remain_Employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increased_Workload_Of_Remain_Employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Indefinite_Contracts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Indefinite_Contracts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Individualistic_Ethical_Climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Individualistic_Ethical_Climate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Integration_Costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Integration_Costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Change_Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Change_Industry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Leave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Change_Profession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Change_Profession">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Leave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Leave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Leave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Leave_The_Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Leave_The_Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Intention_To_Leave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Interpersonal_Conflict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Interpersonal_Conflict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Interpersonal_Justice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Interpersonal_Justice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Involuntary_Turnover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Involuntary_Turnover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Crafting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Crafting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Demotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Demotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Bad_Job_Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Dissatisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Dissatisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Flourishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Flourishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Insecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Insecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Satisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Stability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Stability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Strain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Job_Strain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Juridical_Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Juridical_Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Autonomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Autonomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Career_Growth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Career_Growth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Interpersonal_Justice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Interpersonal_Justice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Learning_Opportunities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Learning_Opportunities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Management_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Management_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Motivation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Motivation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Non-monetary_Recognition_From_The_Supervisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Non-monetary_Recognition_From_The_Supervisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Recognition_And_Reward_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Recognition_And_Reward_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Self-Actualization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Self-Actualization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_Of_Learning_Opportunities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Large-scale_Organizational_Change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Large-scale_Organizational_Change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Layoff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Layoff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Involuntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Leader_Expressed_Humility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Leader_Expressed_Humility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Learning_Opportunities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Learning_Opportunities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Benefits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Less_Work_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Less_Work_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Less_Working_Hours_Spent_Remotely -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Less_Working_Hours_Spent_Remotely">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Living_Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Living_Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Natural_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Long-term_Contracts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Long-term_Contracts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Looseness_Culture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Looseness_Culture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Loss_Of_High-Qualified_And_Skilled_Employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Loss_Of_High-Qualified_And_Skilled_Employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Losses_To_The_Quality_Delivery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Losses_To_The_Quality_Delivery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Affiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Affiliation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Bonding_Social_Capital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Bonding_Social_Capital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Degrees_Of_Conflicting_Demands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Degrees_Of_Conflicting_Demands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Employee_Commitment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Employee_Commitment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Employment_Stability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Employment_Stability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Level_Of_Compensation_Plans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Level_Of_Compensation_Plans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Levels_Of_Distributed_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Levels_Of_Distributed_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_External_Employability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_External_Employability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_Internal_Employability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_Internal_Employability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_Organizational_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_Organizational_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_Public_Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Perceived_Public_Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Involuntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Person-Organization_Fit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Person-Organization_Fit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Quality_Selection_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Quality_Selection_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Quantitative_Demands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Quantitative_Demands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Subjective_Happiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Subjective_Happiness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Well_Being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Well_Being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Work_Engagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Work_Engagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Economic_Stability_Of_The_Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Economic_Stability_Of_The_Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Growth_Opportunities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Growth_Opportunities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Learning_Opportunities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Learning_Opportunities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Professional_Satisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Professional_Satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Well-Being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lower_Well-Being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Machiavellian_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Machiavellian_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Maintain_Highly-qualified_And_Skilled_Employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Maintain_Highly-qualified_And_Skilled_Employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Consequences"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Manageable_Workloads -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Manageable_Workloads">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Management_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Management_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Management_Support_For_Fun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Management_Support_For_Fun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Mentoring_Program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Mentoring_Program">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Learning_Opportunities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Misalignment_Between_Recognition_Received -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Misalignment_Between_Recognition_Received">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#More_Learning_Opportunities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#More_Learning_Opportunities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#More_Predictable_And_Stable_Timetables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#More_Predictable_And_Stable_Timetables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#More_Time_Working_Remotly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#More_Time_Working_Remotly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Natural_Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Natural_Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Need_For_Employment_Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Need_For_Employment_Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Night_Shifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Night_Shifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Benefits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Benefits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Immediate_Leadership_Recognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-monetary_Immediate_Leadership_Recognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Opening_Shifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Opening_Shifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Optimistic_Trust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Optimistic_Trust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Organic_Fun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Organic_Fun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Organizational_Policies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Organizational_Policies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Organizational_Trust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Organizational_Trust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Overload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Overload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Fatigue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Pay_Cuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Pay_Cuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Mastery_Climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Mastery_Climate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Overqualification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Overqualification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Procedural_Pay-setting_Justice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Procedural_Pay-setting_Justice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Public_Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Public_Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Red_Tape_And_Bureaucracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceived_Red_Tape_And_Bureaucracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perception_Of_A_Fulfilling_Job -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perception_Of_A_Fulfilling_Job">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceptions_of_Politics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Perceptions_of_Politics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Physical_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person-Job_Fit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person-Job_Fit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person-Organization_Fit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Person-Organization_Fit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Physical_Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Physical_Agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Polychonicity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Polychonicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Poor_Self-rated_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Poor_Self-rated_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Positive_Attitude_Toward_Job_Changes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Positive_Attitude_Toward_Job_Changes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Positive_Work-related_Experiences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Positive_Work-related_Experiences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Professional_Outdatedness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Professional_Outdatedness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Involuntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Capital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Capital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Contract_Violation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Contract_Violation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Insecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Insecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Actual_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Safety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Psychological_Safety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Pure_Organic_Fun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Pure_Organic_Fun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Recognition_And_Reward_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Recognition_And_Reward_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Recruitment_Costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Recruitment_Costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduced_Extra_Workload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduced_Extra_Workload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_In_Work_Stress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_In_Work_Stress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Costs_Of_Products_And_Services_Offered -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Costs_Of_Products_And_Services_Offered">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Hiring_Costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Hiring_Costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Integration_Costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Integration_Costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Recruitment_Costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Recruitment_Costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Training_Costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Training_Costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Redundancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Redundancy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Involuntary_Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Regular_Individual_Meetings_With_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Regular_Individual_Meetings_With_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Repeated_Job_Crafts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Repeated_Job_Crafts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Replacement_Difficulty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Replacement_Difficulty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Turnover_To_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Consequences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Consequences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Role-based_Skill_Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Role-based_Skill_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Training_And_Development_Programs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Role_Ambiguity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Role_Ambiguity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Role_Conflict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Role_Conflict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Salary_Dissatisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Salary_Dissatisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Satisfaction_About_Work-Family_Balance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Satisfaction_About_Work-Family_Balance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Seasoned_Professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Seasoned_Professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Self-Actualization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Self-Actualization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Self-Organized_Teams -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Self-Organized_Teams">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Self-centered_Career_Orientations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Self-centered_Career_Orientations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Separation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Separation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Shock_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Shock_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Social_Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Social_Agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Socialization_Emphasizing_Organizational_Culture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Socialization_Emphasizing_Organizational_Culture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Stock_Options -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Stock_Options">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use_For_Relationships -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use_For_Relationships">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use_For_Tasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use_For_Tasks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Strengths_Use"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Subjective-Age_Diversity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Subjective-Age_Diversity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Subjective_Happiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Subjective_Happiness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Toxic_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Toxic_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Toxicity-free_Workplace_Policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Toxicity-free_Workplace_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Training_And_Development_Programs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Training_And_Development_Programs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Learning_Opportunities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Transformational_Leadership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Transformational_Leadership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Turnover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Turnover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Unpredictable_Schedules -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Unpredictable_Schedules">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Values_Assessment_In_Recruitment_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Values_Assessment_In_Recruitment_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Variable_Pay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Variable_Pay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Vitality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Vitality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Voluntary_Turnover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Voluntary_Turnover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Turnover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Well-Being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Well-Being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Voluntary_To_The_Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work-Family_Conflict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work-Family_Conflict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work-life_Balance_Satisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work-life_Balance_Satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work-related_Stress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work-related_Stress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work_fo_Large_Companies_Without_Prestige -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Work_fo_Large_Companies_Without_Prestige">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Workplace_Incivility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Workplace_Incivility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Workplace_Ostracism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Workplace_Ostracism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#switch_From_Managerial_To_Non-Managerial_Roles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#switch_From_Managerial_To_Non-Managerial_Roles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Bad_Job_Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#12x36_Shifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#12x36_Shifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#24x48_Shifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#24x48_Shifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Non-conventional_Work_Timetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Alignment_With_The_Company&apos;s_Purpose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Alignment_With_The_Company&apos;s_Purpose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_of_Leader–member_Exchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Lack_of_Leader–member_Exchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Leave_The_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Person–Job_Fit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Low_Person–Job_Fit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Causes_To_Intention_To_Change_Profession_And_Leave_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Utilization_Of_Highly_Qualified_Employees&apos;_Skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Utilization_Of_Highly_Qualified_Employees&apos;_Skills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Retention_Causes"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
