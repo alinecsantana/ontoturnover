@@ -679,7 +679,7 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAInvoluntaryTurnoverConsequenceToTheEmployee -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAInvoluntaryTurnoverConsequenceToTheEmployee">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceEmployee"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Damage_To_Employability_Potential"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Damage_To_Professional_Self-Esteem_And_Identity"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Financial_Instability_And_Insecurity"/>
@@ -696,7 +696,7 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAInvoluntaryTurnoverConsequenceToTheEmployer -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAInvoluntaryTurnoverConsequenceToTheEmployer">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceCompany"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Costs_Of_Products_And_Services_Offered"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Decline_In_Organizational_Performance"/>
@@ -720,7 +720,7 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isARetentionConsequenceToTheEmployee -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isARetentionConsequenceToTheEmployee">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceEmployee"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Of_Retention_To_The_Employee"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Employee_Satisfaction"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increase_In_Employee_Commitment"/>
@@ -732,7 +732,7 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isARetentionConsequenceToTheEmployer -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isARetentionConsequenceToTheEmployer">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceCompany"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Increase_In_Organizational_Performance"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Maintain_Highly-Qualified_And_Skilled_Employees"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Reduction_Of_Costs_Of_Products_And_Services_Offered"/>
@@ -748,7 +748,7 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAVoluntaryTurnoverConsequenceToTheEmployee -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAVoluntaryTurnoverConsequenceToTheEmployee">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceEmployee"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Better_Benefits"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Better_Salaries"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Greater_Job-Person_Fit"/>
@@ -768,7 +768,7 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAVoluntaryTurnoverConsequenceToTheEmployer -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isAVoluntaryTurnoverConsequenceToTheEmployer">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceCompany"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Cumulative_Cost_Increase"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Decline_In_Organizational_Performance"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Delays_In_Project_And_Delivery_Deadlines"/>
@@ -788,7 +788,9 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceCompany -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceCompany">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Event"/>
     </owl:ObjectProperty>
     
 
@@ -796,6 +798,16 @@
     <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceEmployee -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceEmployee">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Consequences_Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#isConsequenceOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -1390,6 +1402,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employee">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Institucional_Agent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Employer"/>
     </owl:Class>
     
 
@@ -1869,6 +1882,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Involuntary_Turnover_Causes">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Turnover_Causes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/vt417960/ontologies/2024/0/ontoturnover#Voluntary_Turnover_Causes"/>
     </owl:Class>
     
 
@@ -3384,5 +3398,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
