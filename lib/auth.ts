@@ -36,11 +36,28 @@ export const authConfig: NextAuthConfig = {
   ],
   callbacks: {
     async jwt({ token, account, profile }) {
-      if (account && profile) {
+      if (account?.access_token) {
         token.accessToken = account.access_token;
-        const p = profile as Record<string, unknown>;
-        token.department = p.department as string | undefined;
-        token.jobTitle = p.job_title as string | undefined;
+
+        // O setor (department) e o cargo (jobTitle) normalmente não vêm
+        // no token OIDC básico. Buscamos via Microsoft Graph para que o
+        // controle de acesso por setor/cargo funcione de verdade.
+        try {
+          const res = await fetch(
+            "https://graph.microsoft.com/v1.0/me?$select=department,jobTitle,displayName,mail",
+            { headers: { Authorization: `Bearer ${account.access_token}` } }
+          );
+          if (res.ok) {
+            const me = (await res.json()) as Record<string, unknown>;
+            token.department = (me.department as string) ?? undefined;
+            token.jobTitle = (me.jobTitle as string) ?? undefined;
+          }
+        } catch {
+          // Sem Graph disponível, mantém o que vier do profile OIDC.
+          const p = (profile ?? {}) as Record<string, unknown>;
+          token.department = (p.department as string) ?? token.department;
+          token.jobTitle = (p.job_title as string) ?? token.jobTitle;
+        }
       }
       return token;
     },

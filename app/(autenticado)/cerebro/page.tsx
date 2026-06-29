@@ -1,20 +1,19 @@
-import { auth } from "@/lib/auth";
+import { sessaoAtual } from "@/lib/acesso";
 import { listarConhecimentos } from "@/lib/db";
 import Link from "next/link";
-import { Plus, Search, BookOpen, Brain } from "lucide-react";
+import { Plus, Search, BookOpen, Brain, ShieldCheck } from "lucide-react";
 import { ConhecimentoCard } from "@/components/ConhecimentoCard";
 
 export default async function CerebroPage({
   searchParams,
 }: {
-  searchParams: { q?: string };
+  searchParams: Promise<{ q?: string }>;
 }) {
-  const session = await auth();
-  if (!session?.user) return null;
-  const userId = session.user.id ?? session.user.email ?? "";
+  const ctx = await sessaoAtual();
+  if (!ctx) return null;
 
-  const busca = searchParams.q;
-  const itens = listarConhecimentos(userId, busca);
+  const { q: busca } = await searchParams;
+  const itens = listarConhecimentos(ctx, busca);
 
   return (
     <div className="p-6 max-w-5xl mx-auto">
@@ -47,11 +46,22 @@ export default async function CerebroPage({
         </div>
       </form>
 
+      {/* Access notice */}
+      <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-3 mb-6 flex items-start gap-2.5">
+        <ShieldCheck className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0" />
+        <p className="text-xs text-indigo-700 leading-relaxed">
+          Você está vendo apenas os conhecimentos liberados ao seu acesso —
+          os seus próprios, os de toda a organização e os restritos ao seu setor
+          (<strong>{ctx.setor ?? "não definido"}</strong>) ou cargo
+          (<strong>{ctx.cargo ?? "não definido"}</strong>).
+        </p>
+      </div>
+
       {/* Stats bar */}
       <div className="flex items-center gap-4 mb-6 text-sm text-slate-500">
         <span className="flex items-center gap-1">
           <BookOpen className="w-4 h-4" />
-          {itens.length} {itens.length === 1 ? "item" : "itens"}
+          {itens.length} {itens.length === 1 ? "item visível" : "itens visíveis"}
           {busca ? ` para "${busca}"` : ""}
         </span>
         <span className="text-slate-300">|</span>
@@ -82,7 +92,14 @@ export default async function CerebroPage({
           {itens.map((item) => (
             <ConhecimentoCard
               key={item.id}
-              item={{ ...item, tags: JSON.parse(item.tags || "[]") }}
+              item={{
+                ...item,
+                tags: JSON.parse(item.tags || "[]"),
+                setores_permitidos: JSON.parse(item.setores_permitidos || "[]"),
+                cargos_permitidos: JSON.parse(item.cargos_permitidos || "[]"),
+                proprio: item.proprio ?? 0,
+                autor_nome: item.autor_nome,
+              }}
             />
           ))}
         </div>

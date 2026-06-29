@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, Save, Brain, Tag, X } from "lucide-react";
+import { ArrowLeft, Save, Brain, Tag, X, Lock, Users, Globe, Check } from "lucide-react";
 import Link from "next/link";
+import { SETORES, CARGOS, ESCOPOS, type Escopo } from "@/lib/organizacao";
 
 const FONTES_IA = [
   { value: "manual", label: "Manual", cor: "bg-slate-100 text-slate-700" },
@@ -12,6 +13,12 @@ const FONTES_IA = [
   { value: "copilot", label: "Copilot", cor: "bg-sky-100 text-sky-700" },
 ];
 
+const ESCOPO_ICON: Record<Escopo, typeof Lock> = {
+  privado: Lock,
+  restrito: Users,
+  organizacao: Globe,
+};
+
 export default function NovoConhecimentoPage() {
   const router = useRouter();
   const [titulo, setTitulo] = useState("");
@@ -19,7 +26,9 @@ export default function NovoConhecimentoPage() {
   const [tagsInput, setTagsInput] = useState("");
   const [tags, setTags] = useState<string[]>([]);
   const [fonteIA, setFonteIA] = useState("manual");
-  const [publico, setPublico] = useState(false);
+  const [escopo, setEscopo] = useState<Escopo>("privado");
+  const [setores, setSetores] = useState<string[]>([]);
+  const [cargos, setCargos] = useState<string[]>([]);
   const [salvando, setSalvando] = useState(false);
   const [erro, setErro] = useState("");
 
@@ -27,15 +36,13 @@ export default function NovoConhecimentoPage() {
     if (e.key === "Enter" || e.key === ",") {
       e.preventDefault();
       const tag = tagsInput.trim().toLowerCase();
-      if (tag && !tags.includes(tag)) {
-        setTags([...tags, tag]);
-      }
+      if (tag && !tags.includes(tag)) setTags([...tags, tag]);
       setTagsInput("");
     }
   }
 
-  function removerTag(tag: string) {
-    setTags(tags.filter((t) => t !== tag));
+  function toggle(lista: string[], setter: (v: string[]) => void, valor: string) {
+    setter(lista.includes(valor) ? lista.filter((v) => v !== valor) : [...lista, valor]);
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -46,15 +53,26 @@ export default function NovoConhecimentoPage() {
       setErro("Título e conteúdo são obrigatórios.");
       return;
     }
+    if (escopo === "restrito" && setores.length === 0 && cargos.length === 0) {
+      setErro("Para o escopo restrito, selecione ao menos um setor ou cargo liberado.");
+      return;
+    }
 
     setSalvando(true);
     try {
       const res = await fetch("/api/conhecimentos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ titulo, conteudo, tags, fonte_ia: fonteIA, publico }),
+        body: JSON.stringify({
+          titulo,
+          conteudo,
+          tags,
+          fonte_ia: fonteIA,
+          escopo,
+          setores_permitidos: escopo === "restrito" ? setores : [],
+          cargos_permitidos: escopo === "restrito" ? cargos : [],
+        }),
       });
-
       if (!res.ok) throw new Error("Erro ao salvar");
       router.push("/cerebro");
       router.refresh();
@@ -112,18 +130,15 @@ export default function NovoConhecimentoPage() {
 
         {/* Tags */}
         <div>
-          <label className="block text-sm font-medium text-slate-700 mb-1.5 flex items-center gap-1">
+          <label className="text-sm font-medium text-slate-700 mb-1.5 flex items-center gap-1">
             <Tag className="w-3.5 h-3.5" />
             Tags
           </label>
           <div className="input flex flex-wrap gap-1.5 min-h-[42px]">
             {tags.map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center gap-1 bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full"
-              >
+              <span key={tag} className="inline-flex items-center gap-1 bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full">
                 {tag}
-                <button type="button" onClick={() => removerTag(tag)} className="hover:text-indigo-900">
+                <button type="button" onClick={() => setTags(tags.filter((t) => t !== tag))} className="hover:text-indigo-900">
                   <X className="w-3 h-3" />
                 </button>
               </span>
@@ -159,19 +174,99 @@ export default function NovoConhecimentoPage() {
           </div>
         </div>
 
-        {/* Público */}
-        <div className="flex items-center gap-3">
-          <input
-            type="checkbox"
-            id="publico"
-            checked={publico}
-            onChange={(e) => setPublico(e.target.checked)}
-            className="w-4 h-4 text-indigo-600 rounded"
-          />
-          <label htmlFor="publico" className="text-sm text-slate-700">
-            Compartilhar com a equipe (visível para outros usuários)
+        {/* Controle de acesso */}
+        <div className="border-t border-slate-200 pt-5">
+          <label className="block text-sm font-medium text-slate-700 mb-1">
+            Quem pode ver este conhecimento?
           </label>
+          <p className="text-xs text-slate-400 mb-3">
+            O controle de acesso define quais setores e cargos enxergam este item no cérebro — e qual contexto as IAs recebem para cada usuário.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-2">
+            {ESCOPOS.map((opt) => {
+              const Icon = ESCOPO_ICON[opt.value];
+              const ativo = escopo === opt.value;
+              return (
+                <button
+                  key={opt.value}
+                  type="button"
+                  onClick={() => setEscopo(opt.value)}
+                  className={`text-left p-3 rounded-lg border transition-all ${
+                    ativo ? "border-indigo-500 bg-indigo-50 ring-1 ring-indigo-500" : "border-slate-200 bg-white hover:bg-slate-50"
+                  }`}
+                >
+                  <div className="flex items-center gap-2 mb-1">
+                    <Icon className={`w-4 h-4 ${ativo ? "text-indigo-600" : "text-slate-500"}`} />
+                    <span className={`text-sm font-medium ${ativo ? "text-indigo-700" : "text-slate-700"}`}>
+                      {opt.label}
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-500 leading-snug">{opt.descricao}</p>
+                </button>
+              );
+            })}
+          </div>
         </div>
+
+        {/* Seleção de setores e cargos (escopo restrito) */}
+        {escopo === "restrito" && (
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 space-y-4">
+            <div>
+              <label className="text-sm font-medium text-slate-700 mb-2 flex items-center gap-1.5">
+                <Users className="w-4 h-4 text-blue-600" />
+                Setores liberados
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {SETORES.map((s) => {
+                  const ativo = setores.includes(s);
+                  return (
+                    <button
+                      key={s}
+                      type="button"
+                      onClick={() => toggle(setores, setSetores, s)}
+                      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium border transition-all ${
+                        ativo ? "bg-blue-600 text-white border-blue-600" : "bg-white text-slate-600 border-slate-200 hover:border-blue-300"
+                      }`}
+                    >
+                      {ativo && <Check className="w-3 h-3" />}
+                      {s}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div>
+              <label className="text-sm font-medium text-slate-700 mb-2 flex items-center gap-1.5">
+                <Check className="w-4 h-4 text-amber-600" />
+                Cargos liberados
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {CARGOS.map((c) => {
+                  const ativo = cargos.includes(c);
+                  return (
+                    <button
+                      key={c}
+                      type="button"
+                      onClick={() => toggle(cargos, setCargos, c)}
+                      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium border transition-all ${
+                        ativo ? "bg-amber-600 text-white border-amber-600" : "bg-white text-slate-600 border-slate-200 hover:border-amber-300"
+                      }`}
+                    >
+                      {ativo && <Check className="w-3 h-3" />}
+                      {c}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <p className="text-xs text-slate-500">
+              Um usuário verá este conhecimento se pertencer a <strong>qualquer</strong> setor
+              ou cargo selecionado acima. Você, como autor, sempre tem acesso.
+            </p>
+          </div>
+        )}
 
         {erro && (
           <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">

@@ -1,7 +1,7 @@
-import { auth } from "@/lib/auth";
-import { estatisticas, ultimosConhecimentos, listarConversas, upsertUsuario } from "@/lib/db";
+import { sessaoAtual } from "@/lib/acesso";
+import { estatisticas, ultimosConhecimentos, listarConversas } from "@/lib/db";
 import Link from "next/link";
-import { BookOpen, MessageSquare, Lightbulb, TrendingUp, Plus, ArrowRight } from "lucide-react";
+import { BookOpen, MessageSquare, Lightbulb, ShieldCheck, Plus, ArrowRight } from "lucide-react";
 
 const AI_INFO = {
   claude: { nome: "Claude Enterprise", cor: "bg-amber-500", texto: "text-amber-700", bg: "bg-amber-50 border-amber-200" },
@@ -10,27 +10,16 @@ const AI_INFO = {
 };
 
 export default async function PainelPage() {
-  const session = await auth();
-  if (!session?.user) return null;
+  const ctx = await sessaoAtual();
+  if (!ctx) return null;
 
-  const userId = session.user.id ?? session.user.email ?? "";
-
-  upsertUsuario({
-    id: userId,
-    email: session.user.email ?? "",
-    nome: session.user.name ?? "",
-    departamento: session.user.department,
-    cargo: session.user.jobTitle,
-    foto_url: session.user.image,
-  });
-
-  const stats = estatisticas(userId);
-  const recentes = ultimosConhecimentos(userId, 4);
-  const conversas = listarConversas(userId).slice(0, 3);
+  const stats = estatisticas(ctx);
+  const recentes = ultimosConhecimentos(ctx, 4);
+  const conversas = listarConversas(ctx.usuarioId).slice(0, 3);
 
   const hora = new Date().getHours();
   const saudacao = hora < 12 ? "Bom dia" : hora < 18 ? "Boa tarde" : "Boa noite";
-  const primeiroNome = session.user.name?.split(" ")[0] ?? "Usuário";
+  const primeiroNome = ctx.nome?.split(" ")[0] ?? "Usuário";
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
@@ -40,10 +29,16 @@ export default async function PainelPage() {
           {saudacao}, {primeiroNome}! 👋
         </h1>
         <p className="text-slate-500 mt-1">
-          {session.user.jobTitle && `${session.user.jobTitle} · `}
-          {session.user.department && `${session.user.department} · `}
-          {session.user.email}
+          {ctx.cargo && `${ctx.cargo} · `}
+          {ctx.setor && `${ctx.setor} · `}
+          {ctx.email}
         </p>
+        {(ctx.setor || ctx.cargo) && (
+          <div className="mt-2 inline-flex items-center gap-1.5 text-xs text-indigo-700 bg-indigo-50 border border-indigo-200 rounded-full px-2.5 py-1">
+            <ShieldCheck className="w-3.5 h-3.5" />
+            Acesso ao cérebro: {ctx.setor ?? "sem setor"} · {ctx.cargo ?? "sem cargo"}
+          </div>
+        )}
       </div>
 
       {/* Stats */}
@@ -67,9 +62,9 @@ export default async function PainelPage() {
           bg="bg-amber-50"
         />
         <StatCard
-          icon={<TrendingUp className="w-5 h-5 text-violet-600" />}
-          valor={stats.porAssistente.length}
-          label="IAs utilizadas"
+          icon={<ShieldCheck className="w-5 h-5 text-violet-600" />}
+          valor={stats.proprios}
+          label="Criados por você"
           bg="bg-violet-50"
         />
       </div>
@@ -132,6 +127,9 @@ export default async function PainelPage() {
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-slate-900 text-sm truncate">{k.titulo}</p>
                       <p className="text-slate-500 text-xs mt-0.5 line-clamp-2">{k.conteudo}</p>
+                      {!k.proprio && k.autor_nome && (
+                        <p className="text-slate-400 text-xs mt-1">Compartilhado por {k.autor_nome}</p>
+                      )}
                     </div>
                     <AIBadge fonte={k.fonte_ia} />
                   </div>

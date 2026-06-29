@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { Users, Building2, Mail, Shield } from "lucide-react";
+import { Users, Building2, Mail, Shield, Lock, Globe, KeyRound } from "lucide-react";
 
 export default async function EquipePage() {
   const session = await auth();
@@ -33,6 +33,48 @@ export default async function EquipePage() {
             <InfoField label="Departamento" value={session.user.department ?? "Não informado"} />
             <InfoField label="Cargo" value={session.user.jobTitle ?? "Não informado"} />
           </div>
+        </div>
+      </div>
+
+      {/* Access control model */}
+      <div className="card p-6 mb-6">
+        <h2 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
+          <KeyRound className="w-4 h-4 text-violet-600" />
+          Controle de Acesso ao Cérebro (por Setor e Cargo)
+        </h2>
+        <p className="text-slate-500 text-sm mb-4">
+          Cada conhecimento tem um escopo. Com base no seu setor
+          (<strong>{session.user.department ?? "não definido"}</strong>) e cargo
+          (<strong>{session.user.jobTitle ?? "não definido"}</strong>), o sistema decide
+          automaticamente o que você vê — e o que as IAs recebem de contexto ao responder para você.
+        </p>
+        <div className="grid md:grid-cols-3 gap-4">
+          <EscopoCard
+            icon={<Lock className="w-4 h-4 text-slate-600" />}
+            titulo="Privado"
+            descricao="Visível apenas para o autor. Nenhum outro usuário ou IA de terceiros acessa."
+            cor="bg-slate-50 border-slate-200"
+          />
+          <EscopoCard
+            icon={<Users className="w-4 h-4 text-violet-600" />}
+            titulo="Restrito por setor/cargo"
+            descricao="Liberado para setores e cargos específicos. O usuário vê se pertencer a qualquer um deles."
+            cor="bg-violet-50 border-violet-200"
+          />
+          <EscopoCard
+            icon={<Globe className="w-4 h-4 text-emerald-600" />}
+            titulo="Organização"
+            descricao="Disponível para todos os usuários autenticados da empresa."
+            cor="bg-emerald-50 border-emerald-200"
+          />
+        </div>
+        <div className="mt-4 bg-slate-50 rounded-lg p-4 border border-slate-200">
+          <p className="text-xs text-slate-500 leading-relaxed">
+            <strong className="text-slate-700">Garantia de isolamento:</strong> o filtro de acesso é
+            aplicado no banco de dados, tanto na listagem do cérebro quanto na montagem do contexto
+            enviado ao Claude, Gemini e Copilot. Um conhecimento restrito ao setor Financeiro, por
+            exemplo, nunca aparece para alguém de outro setor nem vaza nas respostas das IAs para esse usuário.
+          </p>
         </div>
       </div>
 
@@ -107,6 +149,18 @@ export default async function EquipePage() {
           </p>
         </div>
       </div>
+    </div>
+  );
+}
+
+function EscopoCard({ icon, titulo, descricao, cor }: { icon: React.ReactNode; titulo: string; descricao: string; cor: string }) {
+  return (
+    <div className={`rounded-lg p-4 border ${cor}`}>
+      <div className="flex items-center gap-2 mb-1.5">
+        {icon}
+        <p className="font-medium text-slate-900 text-sm">{titulo}</p>
+      </div>
+      <p className="text-xs text-slate-500 leading-snug">{descricao}</p>
     </div>
   );
 }

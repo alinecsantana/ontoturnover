@@ -1,26 +1,15 @@
 import { NextRequest } from "next/server";
-import { auth } from "@/lib/auth";
+import { sessaoAtual } from "@/lib/acesso";
 import { chatClaude } from "@/lib/ai/claude";
 import { chatGemini } from "@/lib/ai/gemini";
 import { chatCopilot } from "@/lib/ai/copilot";
-import { criarConversa, adicionarMensagem, buscarMensagens, listarConhecimentos, upsertUsuario } from "@/lib/db";
+import { criarConversa, adicionarMensagem, buscarMensagens, listarConhecimentos } from "@/lib/db";
 
 export async function POST(request: NextRequest) {
-  const session = await auth();
-  if (!session?.user?.email) {
+  const ctx = await sessaoAtual();
+  if (!ctx) {
     return new Response(JSON.stringify({ error: "Não autenticado" }), { status: 401 });
   }
-
-  const userId = session.user.id ?? session.user.email;
-
-  upsertUsuario({
-    id: userId,
-    email: session.user.email,
-    nome: session.user.name ?? session.user.email,
-    departamento: session.user.department,
-    cargo: session.user.jobTitle,
-    foto_url: session.user.image,
-  });
 
   const body = await request.json();
   const { assistente, mensagem, conversa_id } = body as {
@@ -36,7 +25,7 @@ export async function POST(request: NextRequest) {
   let conversaId = conversa_id;
   if (!conversaId) {
     conversaId = criarConversa({
-      usuario_id: userId,
+      usuario_id: ctx.usuarioId,
       assistente,
       titulo: mensagem.slice(0, 60),
     });
@@ -50,10 +39,11 @@ export async function POST(request: NextRequest) {
     conteudo: m.conteudo,
   }));
 
-  // Build context from knowledge base (top 3 most recent items)
-  const conhecimentos = listarConhecimentos(userId);
+  // Contexto do cérebro: SOMENTE conhecimentos que este usuário pode ver,
+  // respeitando o controle de acesso por setor e cargo.
+  const conhecimentos = listarConhecimentos(ctx);
   const contexto = conhecimentos
-    .slice(0, 3)
+    .slice(0, 5)
     .map((k) => `## ${k.titulo}\n${k.conteudo}`)
     .join("\n\n---\n\n");
 
@@ -66,7 +56,7 @@ export async function POST(request: NextRequest) {
     aiStream = await chatCopilot(mensagensIA, contexto || undefined);
   }
 
-  // Collect full response to save in DB
+  // Espelha o stream: um lado vai para o cliente, outro persiste no banco.
   const [stream1, stream2] = aiStream.tee();
 
   (async () => {
@@ -86,7 +76,6 @@ export async function POST(request: NextRequest) {
       "Content-Type": "text/plain; charset=utf-8",
       "X-Conversa-Id": conversaId,
       "Cache-Control": "no-cache",
-      "Transfer-Encoding": "chunked",
     },
   });
 }
