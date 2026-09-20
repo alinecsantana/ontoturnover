@@ -2,6 +2,8 @@
 
 Project by **Santana, Aline C**. under supervision by **Rodrigues, Cleyton M. O. and Farias Junior, Ivaldir H. de**, in the Computer Engineering Program of University of Pernambuco (UPE).
 
+Status: UFO version implemented in 2023, but outdated. gUFO version under construction: conceptual revision and foundational grounding (2026).
+
 <h3>Get to know more about at:</h3>
 
 - SANTANA, A. C.; RODRIGUES, C. M. d. O.; FARIAS JUNIOR, I. H. d.; SANTOS, W. B. OntoTurnover: A Lightweight Domain Ontology for Modeling Employee Turnover. 2023 18th Iberian Conference on Information Systems and Technologies (CISTI), Aveiro, Portugal, 2023, pp. 1-4, doi: 10.23919/CISTI58278.2023.10211799. https://ieeexplore.ieee.org/document/10211799
