@@ -5,6 +5,7 @@ Project by **Santana, A. C.**. under supervision by **Rodrigues, C. M. O., in th
 Status: UFO version implemented in 2023, but outdated. gUFO version under construction: conceptual revision and foundational grounding (2026).
 
 <h3>Get to know more about at:</h3>
+
 - Santana, A. C., & Rodrigues, C. M. O. (2026). Towards OntoHR: A gUFO-grounded ontology ecosystem for auditable LLM-assisted HR decision support [Paper presentation]. 3rd Annual Workshop on the Convergence of Large Language Models and Ontologies (ONTOLLM), Joint Ontology Workshops (JOWO 2026), Vitória, ES, Brazil. https://foisconference.org/assets/pdfs/jowo/ontollm-6.pdf 
 
 - Santana, A. C., Rodrigues, C. M. de O., Farias Junior, I. H. de, & Santos, W. B. (2023). OntoTurnover: A lightweight domain ontology for modeling employee turnover. In 2023 18th Iberian Conference on Information Systems and Technologies (CISTI) (pp. 1-4). IEEE. https://doi.org/10.23919/CISTI58278.2023.10211799
