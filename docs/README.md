@@ -1,8 +1,9 @@
 <h1>OntoTurnover: An ontology about Employee Turnover.</h1>
 
-Project by **Santana, A. C.**. under supervision by Rodrigues, C. M. O., in the Computer Engineering Program of University of Pernambuco (UPE).
+Project by **Santana, A. C.** under supervision by Rodrigues, C. M. O., in the Computer Engineering Program of University of Pernambuco (UPE).
 
 Status: UFO version implemented in 2023, but outdated. gUFO version under construction: conceptual revision and foundational grounding (2026).
+RDF Archive: https://github.com/alinecsantana/ontoturnover/blob/main/docs/santana2026ontoturnover.rdf
 
 <h3>Get to know more about at:</h3>
 
